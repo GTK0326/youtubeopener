@@ -21,7 +21,9 @@ Alexaに指定したトリガーでアクションを行う。
 3.Push2RunからYoutubeOpener.batが起動される。
 
 4.YoutubeOpener.batで海外のGoogleサイト"https://www.google.tk/?gl=tk" が開かれる。(このサイトは発火のために開いただけであとの処理で消す。)
------Google Extension処理開始-----
+
+＿＿Google Extension処理開始＿＿
+
 5.このサイトの起動を確認したGoogle extension内のcontent.jsのscriptが実行される。
 
 6.content.jsにおいてbackground.jsに通知(発火)が行く。
@@ -39,7 +41,9 @@ Alexaに指定したトリガーでアクションを行う。
 12.background.jsにおいて、Chromeで開かれているタブの中から"https://www.google.tk/?gl=tk" の文字列が存在するものを選択する。(4で生成したもの)
 
 13.12において選択したタブを削除する。
------Google Extension処理終了-----
+
+＿＿Google Extension処理終了＿＿
+
 14.YoutubeOpener.batのnircmdコマンドで"F"キーが押下されフルスクリーン化する。
 
 15.実行終了
