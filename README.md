@@ -1,19 +1,30 @@
 # youtubeopener
+
 Alexaに指示を出すことで、パソコンでYoutubeをフルスクリーン再生させるGoogle拡張機能です。
 
+
 #事前準備
+
 1.nircmdをインストールする。
+
 2."manifest.json","content.js","background.js"の3つを同じフォルダに入れてgoogle拡張機能に追加する。
+
 3."YoutubeOpener.bat"を任意のフォルダに格納する。
+
 4.PushBulletを使ってPush2Runに通知を送り"YoutubeOpener.bat"の起動設定を行う。
+
 5.IFTTTでAlexaからPushBulletに通知を送る設定を行う。
 
 6.Chromeブラウザで再生途中のYoutube動画を開いておく（最小化していてもよい）
 
+
 #使用方法
+
 Alexaに指定したトリガーでアクションを行う。
 
+
 #内部処理の説明
+
 1.Alexaのアクションを実行する
 
 2.IFTTTを通じてPushBulletへ、PushBulletからPush2Runへ通知が送られる。
